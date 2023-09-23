@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Signup</h1>
+
+    <form id="registration-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <br>
+        <button type="submit">Register</button>
+    </form>
+
+    <button id="login-button">Login</button>
+
+    <script>
+        const registrationForm = document.getElementById('registration-form');
+        const usernameInput = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
+        const loginButton = document.getElementById('login-button');
+
+        registrationForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const username = usernameInput.value;
+            const password = passwordInput.value;
+
+            alert('User registered successfully.');
+            registrationForm.reset();
+
+            // Redirect to the login page
+            window.location.href = 'login\index.html';
+        });
+
+        // Add a click event listener to the login button
+        loginButton.addEventListener('click', function () {
+            // Redirect to the login page
+            window.location.href = 'login\index.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Login</h1>
+
+    <form id="login-form">
+        <label for="login-username">Username:</label>
+        <input type="text" id="login-username" required>
+        <br>
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" required>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+    <script>
+        const loginForm = document.getElementById('login-form');
+        const loginUsernameInput = document.getElementById('login-username');
+        const loginPasswordInput = document.getElementById('login-password');
+
+        loginForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const enteredUsername = loginUsernameInput.value;
+            const enteredPassword = loginPasswordInput.value;
+
+            if (enteredPassword === hardcodedPassword) {
+                alert('Login successful.');
+                loginForm.reset();
+            } else {
+                alert('Login failed. Please check your credentials.');
+            }
+        });
+    </script>
+</body>
+</html>
