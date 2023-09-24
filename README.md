@@ -27,7 +27,7 @@ Please note that this is a simplified example, and the actual implementation wou
 
 ## Usage
 
-1. Clone the repository:git clone https://github.com/yourusername/your-ecommerce-website.git2. Open the `index.html` file in your web browser to access the website.
+1. Clone the repository:https://github.com/Dhruvabhat24/E-Commerce.git. Open the `index.html` file in your web browser to access the website.
 
 ## Contributing
 
