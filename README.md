@@ -29,10 +29,6 @@ Please note that this is a simplified example, and the actual implementation wou
 
 1. Clone the repository:https://github.com/Dhruvabhat24/E-Commerce.git. Open the `index.html` file in your web browser to access the website.
 
-## Contributing
-
-If you'd like to contribute to this project, please follow our [contribution guidelines](CONTRIBUTING.md).
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
