@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Laptops</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gaming Laptops</h1>
+
+    <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="laptop1.jpg" alt="Laptop 1">
+            <h3>Laptop 1</h3>
+            <p>Description of Laptop 1.</p>
+            <p>Price: $999.99</p>
+            <button class="view-details" data-product="Laptop 1" data-price="999.99">View Details</button>
+            <button class="add-to-cart" data-product="Laptop 1" data-price="999.99">Add to Cart</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="laptop2.jpg" alt="Laptop 2">
+            <h3>Laptop 2</h3>
+            <p>Description of Laptop 2.</p>
+            <p>Price: $1,199.99</p>
+            <button class="view-details" data-product="Laptop 2" data-price="1199.99">View Details</button>
+            <button class="add-to-cart" data-product="Laptop 2" data-price="1199.99">Add to Cart</button>
+        </div>
+
+        <!-- Add more product cards as needed -->
+    </div>
+
+    <!-- Product Details Popup -->
+    <div class="product-popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>Product Details</h2>
+            <p id="popup-product-name">Product Name</p>
+            <p id="popup-product-description">Product Description</p>
+            <p id="popup-product-price">Product Price</p>
+            <button class="add-to-cart-popup">Add to Cart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
