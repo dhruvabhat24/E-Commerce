@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="signup.css">
 </head>
 <body>
+    <div class="background-image">
+        <img src="bg.jpg" alt="background-image">
+    </div>
     <h1>Signup</h1>
-
     <form id="registration-form">
         <label for="username">Username:</label>
         <input type="text" id="username" required>
@@ -18,8 +20,6 @@
         <br>
         <button type="submit">Register</button>
     </form>
-
-    <button id="login-button">Login</button>
 
     <script>
         const registrationForm = document.getElementById('registration-form');
@@ -36,14 +36,6 @@
             alert('User registered successfully.');
             registrationForm.reset();
 
-            // Redirect to the login page
-            window.location.href = 'login.html';
-        });
-
-        // Add a click event listener to the login button
-        loginButton.addEventListener('click', function () {
-            // Redirect to the login page
-            window.location.href = 'login.html';
         });
     </script>
 </body>
