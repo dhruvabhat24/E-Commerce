@@ -4,12 +4,14 @@ Welcome to My E-commerce Website! This is a simple example of an e-commerce site
 
 ## Features
 
-### Login Page
-![Login Page](screenshots/login.png)
+### Login Page![login](https://github.com/Dhruvabhat24/E-Commerce/assets/122305929/7734eaa9-e98d-4f99-bb12-f884c16ca917)
+
+
 
 ### Signup Page
-![Signup Page](screenshots/signup.png)
 
+
+![signup](https://github.com/Dhruvabhat24/E-Commerce/assets/122305929/0f9ba136-053b-48ff-ab39-da42acd33333)
 
 ### Product Categories
 
