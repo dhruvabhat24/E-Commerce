@@ -1,6 +1,5 @@
 # E-Commerce Website
-## Week 2 task [InternPe](https://internpe.in/)
-Welcome to My E-commerce Website! This is a simple example of an e-commerce site with a login page, signup page, featured section, and product categories.
+
 
 ## Features
 
