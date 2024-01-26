@@ -3,43 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce website</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Digital Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" id="nav__name">
-                Digital <span>Store</span>
-            </a>
-            <div class="nav__menu" id="nav-menu">
-                <ul id="nav__list">
-                    <li id="nav__item">
-                        <a href="#home" class="nav_link active-link">Home</a>
-                    </li>
-                    <li id="nav__item">
-                        <a href="#featured" class="nav_link active-link">Featured</a>
-                    </li>
-                    <li id="nav__item">
-                        <a href="#cart" class="nav_link active-link">Cart</a>
-                    </li>
-                    <li id="nav__item">
-                        <a href="account/login.html" class="nav_link active-link">Login</a>
-                    </li>
-                    <li id="nav__item">
-                        <a href="account/signup.html" class="nav_link active-link">Signup</a>
-                    </li>
-                </ul>
-                <div id="nav__close" class="nav-close">
-                    <i id="ri-close-fill"></i>
-                </div>
-            </div>
-            <div id="nav__toggle" id="nav-toggle">
-                <i id="ri-menu-fill"></i>
-            </div>
-        </nav>
-    </header>
+
+     <header class="header" id="header">
+    <a href="#" id="nav__name">
+        <img src="assets\img\1.png" alt="Logo" id="logo"> Digital Store
+    </a>    
+    <ul id="nav__list">
+        <li id="nav__item">
+            <a href="#home" class="nav_link active-link">Home</a>
+        </li>
+        <li id="nav__item">
+            <a href="#featured" class="nav_link active-link">Featured</a>
+        </li>
+        <li id="nav__item">
+            <a href="#cart" class="nav_link active-link">Cart</a>
+        </li>
+        <li id="nav__item">
+            <a href="account/login.html" class="nav_link active-link">Login</a>
+        </li>
+        <li id="nav__item">
+            <a href="account/signup.html" class="nav_link active-link">Signup</a>
+        </li>
+    </ul>
+    <button id="nav__toggle" style="display: none;">Toggle</button>
+    <button id="nav__close" style="display: none;">Close</button>
+</header>
 
     <main class="main">
         <section class="home Section" id="home">
@@ -47,34 +41,53 @@
                 <div class="home__content">
                     <div class="home__data">
                         <h1 class="home__title">
-                            <span>Buy</span> <br> <span>Anything</span> <br> <span>Anywhere</span>
+                             Buy || Anything || Anywhere
                         </h1>
                     </div>
                 </div>
             </div>
-            <div class="home__products">
-                <article class="home__product-card" style="background-image: url('assets/img/gaming.jpg');">
-                    <a href="products/gaming.html" target="_blank" class="home__product-info">
-                        <h2>Gaming Laptops</h2>
-                    </a>
-                </article>
-                <article class="home__product-card" style="background-image: url('assets/img/laptop.jpg');">
-                    <a href="products/laptop.html" target="_blank" class="home__product-info">
-                        <h2>Laptops</h2>
-                    </a>
-                </article>
-                <article class="home__product-card" style="background-image: url('assets/img/smartphone.png');">
-                    <a href="products/ph.html" target="_blank" class="home__product-info">
-                        <h2>Mobile Phones</h2>
-                    </a>
-                </article>
-                <article class="home__product-card" style="background-image: url('assets/img/headphone.jpg');">
-                    <a href="products/hp.html" target="_blank" class="home__product-info">
-                        <h2>Headphones</h2>
-                    </a>
-                </article>
-            </div>
-        </section>
+  
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+      <article class="home__product-card" style="background-image: url('assets/img/gaming.jpg'); background-size: cover;">
+        <a href="products/gaming.html" target="_blank" class="home__product-info">
+          <h2>Gaming Laptops</h2>
+        </a>
+      </article>
+    </div>
+    <!-- Slide 2 -->
+    <div class="swiper-slide">
+      <article class="home__product-card" style="background-image: url('assets/img/laptop.jpg'); background-size: cover;">
+        <a href="products/laptop.html" target="_blank" class="home__product-info">
+          <h2>Laptops</h2>
+        </a>
+      </article>
+    </div>
+    <!-- Slide 3 -->
+    <div class="swiper-slide">
+      <article class="home__product-card" style="background-image: url('assets/img/smartphone.png'); background-size: cover;">
+        <a href="products/ph.html" target="_blank" class="home__product-info">
+          <h2>Mobile Phones</h2>
+        </a>
+      </article>
+    </div>
+    <!-- Slide 4 -->
+    <div class="swiper-slide">
+      <article class="home__product-card" style="background-image: url('assets/img/headphone.jpg'); background-size: cover;">
+        <a href="products/hp.html" target="_blank" class="home__product-info">
+          <h2>Headphones</h2>
+        </a>
+      </article>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+</div>
+</section>
+
         <section class="featured" id="featured">
             <div class="featured-scroll-container">
             <article class="featured-products">
@@ -142,15 +155,33 @@
             <div class="footer__container container">
                 <div class="footer__logo">
                     <a href="#" id="footer__name">
-                        Digital <span>Store</span>
+                        <span>Digital Store</span>
                     </a>
                 </div>
                 <div class="footer__text">
-                    <p>&copy; 2023 Digital Store. All Rights Reserved.</p>
+                    <p>&copy; 2023 Digital Store | All Rights Reserved.</p>
                 </div>
             </div>
         </footer>
         
     </main>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    });
+  </script> 
 </body>
 </html>
